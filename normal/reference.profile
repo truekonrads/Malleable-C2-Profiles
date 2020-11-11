@@ -100,7 +100,8 @@ set useragent "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like G
 # define indicators for an set GET
 http-get {
 	# we require a stub URI to attach the rest of our data to.
-	set uri "/api/v1/Updates";
+	set uri "/api/v1/Updates";  
+	#Multiple URIs can be specified with a space between each. E.g. [set uri "/api/v1/Updates /api/v2/Download";]
 
 	client {
 
